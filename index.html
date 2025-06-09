@@ -7,12 +7,31 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-100 text-gray-800">
-  <header class="bg-gray-900 text-white p-6 text-center">
-    <h1 class="text-3xl font-bold">Криптовалютные Биржи</h1>
-    <p class="mt-2">Актуальная информация о топовых биржах и новостях индустрии</p>
+  <header class="bg-gray-900 text-white p-6">
+    <div class="max-w-5xl mx-auto flex justify-between items-center">
+      <div>
+        <h1 class="text-3xl font-bold">Криптовалютные Биржи</h1>
+        <p class="mt-1 text-sm">Актуальная информация о топовых биржах и новостях индустрии</p>
+      </div>
+      <nav class="space-x-4">
+        <a href="#about" class="hover:underline">О криптовалютах</a>
+        <a href="#exchanges" class="hover:underline">Биржи</a>
+        <a href="#comparison" class="hover:underline">Сравнение</a>
+        <a href="#news" class="hover:underline">Новости</a>
+        <a href="#faq" class="hover:underline">FAQ</a>
+        <a href="https://t.me/+PJkfVDvTzIJlODY8" target="_blank" class="bg-blue-500 px-3 py-1 rounded text-white hover:bg-blue-600">Телеграм</a>
+      </nav>
+    </div>
   </header>
 
-  <section class="p-6 max-w-5xl mx-auto">
+  <section id="about" class="p-6 max-w-5xl mx-auto">
+    <h2 class="text-2xl font-semibold mb-4">Что такое криптовалюта?</h2>
+    <p class="bg-white p-4 rounded-xl shadow">
+      Криптовалюта — это цифровая или виртуальная валюта, использующая криптографию для обеспечения безопасности. В отличие от традиционных валют, она децентрализована и работает на базе технологии блокчейн. Биткойн стал первой и самой известной криптовалютой, но сегодня существуют тысячи других: Ethereum, Solana, Toncoin и др.
+    </p>
+  </section>
+
+  <section id="exchanges" class="p-6 max-w-5xl mx-auto">
     <h2 class="text-2xl font-semibold mb-4">Популярные биржи</h2>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
       <div class="bg-white rounded-xl shadow p-4">
@@ -30,7 +49,7 @@
     </div>
   </section>
 
-  <section class="p-6 max-w-5xl mx-auto">
+  <section id="comparison" class="p-6 max-w-5xl mx-auto">
     <h2 class="text-2xl font-semibold mb-4">Сравнение бирж</h2>
     <div class="overflow-x-auto">
       <table class="min-w-full bg-white rounded-xl shadow">
@@ -66,7 +85,7 @@
     </div>
   </section>
 
-  <section class="p-6 max-w-5xl mx-auto">
+  <section id="news" class="p-6 max-w-5xl mx-auto">
     <h2 class="text-2xl font-semibold mb-4">Новости криптобирж</h2>
     <div class="space-y-4">
       <div class="bg-white p-4 rounded-xl shadow">
@@ -87,7 +106,7 @@
     </div>
   </section>
 
-  <section class="p-6 max-w-5xl mx-auto">
+  <section id="faq" class="p-6 max-w-5xl mx-auto">
     <h2 class="text-2xl font-semibold mb-4">FAQ</h2>
     <div class="space-y-2">
       <div>
