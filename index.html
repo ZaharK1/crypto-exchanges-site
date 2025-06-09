@@ -5,6 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Криптовалютные биржи</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute('href'));
+          if (target) {
+            target.scrollIntoView({ behavior: 'smooth' });
+          }
+        });
+      });
+    });
+  </script>
 </head>
 <body class="bg-gray-100 text-gray-800">
   <header class="bg-gray-900 text-white p-6">
@@ -37,8 +50,13 @@
       <img src="https://cryptopotato.com/wp-content/uploads/2022/06/top_crypto_exchanges_volume_comparison.png" alt="Объем торгов" class="w-full rounded">
       <img src="https://static.coindesk.com/wp-content/uploads/2021/04/crypto-trading-volume-chart.jpg" alt="Рост рынка" class="w-full rounded">
       <p>
-        На графиках показан рост интереса к криптовалютам и объём торгов на крупнейших биржах. Тенденции говорят о стабильном увеличении активности пользователей, особенно в период роста рынка (bull-run).
-        Инвесторы используют технический анализ, графики и индикаторы, чтобы принимать решения о покупке и продаже активов.
+        На графиках отображаются ключевые показатели крупнейших криптобирж. Binance лидирует по объемам торгов, тогда как OKX и Bybit демонстрируют значительный рост благодаря инновациям и поддержке новых продуктов.
+        <br><br>
+        Современный рынок криптовалют отличается высокой волатильностью и требует постоянного анализа. Графики — это ключевой инструмент трейдера: они помогают определить уровни поддержки и сопротивления, а также прогнозировать будущие движения цены.
+        <br><br>
+        Помимо технического анализа, важно учитывать фундаментальные факторы: новости о регулировании, интеграции с платёжными системами, листинг новых токенов и партнёрства бирж. Всё это влияет на настроение инвесторов и динамику рынка.
+        <br><br>
+        Образование и доступ к аналитике — основа успешного инвестирования в криптовалюту. Мы предоставляем качественную информацию, а в нашем Telegram-канале делимся конкретными стратегиями и кейсами.
       </p>
     </div>
   </section>
